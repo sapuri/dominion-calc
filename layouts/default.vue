@@ -34,7 +34,7 @@ export default {
     return {
       clipped: false,
       fixed: false,
-      title: 'Dominion Counter'
+      title: 'ドミニオン計算機'
     }
   }
 }

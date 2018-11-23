@@ -7,10 +7,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Dominion Counter',
+    title: 'ドミニオン計算機',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1 maximum-scale=1, minimum-scale=1, user-scalable=no'
+      },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
@@ -47,18 +51,15 @@ module.exports = {
     '@nuxtjs/axios'
   ],
   manifest: {
-    name: 'Dominion Counter',
+    name: 'ドミニオン計算機',
     lang: 'ja',
-    short_name: 'Dominion',
-    title: 'Dominion Counter',
-    'og:title': 'Dominion Counter',
+    short_name: 'ドミニオン計算機',
+    title: 'ドミニオン計算機',
+    'og:title': 'ドミニオン計算機',
     description: "Dominion's victory point calculator",
     'og:description': "Dominion's victory point calculator",
     theme_color: 'black',
     background_color: 'black'
-  },
-  workbox: {
-    dev: true
   },
   /*
   ** Axios module configuration
