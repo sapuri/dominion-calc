@@ -1,8 +1,9 @@
 # dominion-calc
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/sapuri/dominion-calc.svg)](https://greenkeeper.io/)
-
 > Dominion's victory point calculator
+
+[![Build Status](https://travis-ci.org/sapuri/dominion-calc.svg?branch=master)](https://travis-ci.org/sapuri/dominion-calc)
+[![Greenkeeper badge](https://badges.greenkeeper.io/sapuri/dominion-calc.svg)](https://greenkeeper.io/)
 
 ## Build Setup
 
