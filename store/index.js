@@ -3,7 +3,8 @@ export const state = () => ({
     estate: 3,
     duchy: 0,
     province: 0,
-    curse: 0
+    curse: 0,
+    gardens: 0
   }
 })
 
@@ -13,7 +14,8 @@ export const mutations = {
       estate: 3,
       duchy: 0,
       province: 0,
-      curse: 0
+      curse: 0,
+      gardens: 0
     }
   },
   incrementEstate(state) {
@@ -33,6 +35,12 @@ export const mutations = {
   },
   decrementProvince(state) {
     if (state.counter.province >= 1) state.counter.province--
+  },
+  incrementGardens(state) {
+    state.counter.gardens++
+  },
+  decrementGardens(state) {
+    if (state.counter.gardens >= 1) state.counter.gardens--
   },
   incrementCurse(state) {
     state.counter.curse++
@@ -57,6 +65,9 @@ export const actions = {
       case 'province':
         context.commit('incrementProvince')
         break
+      case 'gardens':
+        context.commit('incrementGardens')
+        break
       case 'curse':
         context.commit('incrementCurse')
         break
@@ -74,6 +85,9 @@ export const actions = {
         break
       case 'province':
         context.commit('decrementProvince')
+        break
+      case 'gardens':
+        context.commit('decrementGardens')
         break
       case 'curse':
         context.commit('decrementCurse')

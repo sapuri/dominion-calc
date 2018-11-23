@@ -53,6 +53,20 @@
             @click="incrementCounter('province')">+</v-btn>
         </section>
 
+        <section id="gardens">
+          庭園: <b>{{ $store.state.counter.gardens }}</b> 枚<br>
+          <v-btn
+            color="error"
+            large
+            nuxt
+            @click="decrementCounter('gardens')">-</v-btn>
+          <v-btn
+            color="info"
+            large
+            nuxt
+            @click="incrementCounter('gardens')">+</v-btn>
+        </section>
+
         <section id="curse">
           呪い: <b>{{ $store.state.counter.curse }}</b> 枚<br>
           <v-btn
@@ -65,6 +79,14 @@
             large
             nuxt
             @click="incrementCounter('curse')">+</v-btn>
+        </section>
+
+        <section id="deck">
+          <v-select
+            :items="numRange"
+            v-model="deck"
+            label="デッキの枚数"
+          />
         </section>
 
         <section id="clear">
@@ -81,6 +103,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      numRange: Array.from(Array(101).keys()),
+      deck: 10
+    }
+  },
   computed: {
     counter() {
       return this.$store.state.counter
@@ -90,7 +118,8 @@ export default {
       return (
         counter.estate +
         counter.duchy * 3 +
-        counter.province * 5 -
+        counter.province * 6 +
+        counter.gardens * parseInt(this.deck / 10) -
         counter.curse
       )
     }
