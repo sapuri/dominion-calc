@@ -127,6 +127,7 @@ export default {
   methods: {
     initCounter() {
       this.$store.dispatch('initCounter')
+      this.deck = 10
     },
     incrementCounter(type) {
       this.$store.dispatch('incrementCounter', type)
