@@ -15,10 +15,12 @@
           屋敷: <b>{{ $store.state.counter.estate }}</b> 枚<br>
           <v-btn
             color="error"
+            large
             nuxt
             @click="decrementCounter('estate')">-</v-btn>
           <v-btn
             color="info"
+            large
             nuxt
             @click="incrementCounter('estate')">+</v-btn>
         </section>
@@ -27,10 +29,12 @@
           公領: <b>{{ $store.state.counter.duchy }}</b> 枚<br>
           <v-btn
             color="error"
+            large
             nuxt
             @click="decrementCounter('duchy')">-</v-btn>
           <v-btn
             color="info"
+            large
             nuxt
             @click="incrementCounter('duchy')">+</v-btn>
         </section>
@@ -39,10 +43,12 @@
           属州: <b>{{ $store.state.counter.province }}</b> 枚<br>
           <v-btn
             color="error"
+            large
             nuxt
             @click="decrementCounter('province')">-</v-btn>
           <v-btn
             color="info"
+            large
             nuxt
             @click="incrementCounter('province')">+</v-btn>
         </section>
@@ -51,10 +57,12 @@
           呪い: <b>{{ $store.state.counter.curse }}</b> 枚<br>
           <v-btn
             color="info"
+            large
             nuxt
             @click="decrementCounter('curse')">-</v-btn>
           <v-btn
             color="error"
+            large
             nuxt
             @click="incrementCounter('curse')">+</v-btn>
         </section>
@@ -62,6 +70,7 @@
         <section id="clear">
           <v-btn
             color="warning"
+            large
             nuxt
             @click="initCounter">C</v-btn>
         </section>
