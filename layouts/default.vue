@@ -16,6 +16,7 @@
 
     <v-footer
       :fixed="fixed"
+      height="48"
       app
     >
       <v-flex
