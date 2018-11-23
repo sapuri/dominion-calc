@@ -26,19 +26,6 @@
         <nuxt />
       </v-container>
     </v-content>
-
-    <v-footer
-      :fixed="fixed"
-      height="48"
-      app
-    >
-      <v-flex
-        pa-3
-        text-xs-right
-      >
-        &copy; 2018 dominion.sapuri.io
-      </v-flex>
-    </v-footer>
   </v-app>
 </template>
 
@@ -47,7 +34,6 @@ export default {
   data() {
     return {
       clipped: false,
-      fixed: false,
       title: 'ドミニオン計算機'
     }
   }
