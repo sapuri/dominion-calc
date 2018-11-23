@@ -82,11 +82,10 @@
         </section>
 
         <section id="deck">
-          <v-text-field
+          <v-select
+            :items="numRange"
             v-model="deck"
             label="デッキの枚数"
-            type="number"
-            clearable
           />
         </section>
 
@@ -106,6 +105,7 @@
 export default {
   data() {
     return {
+      numRange: Array.from(Array(101).keys()),
       deck: 10
     }
   },
