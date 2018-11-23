@@ -42,9 +42,24 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios'
   ],
+  manifest: {
+    name: 'Dominion Counter',
+    lang: 'ja',
+    short_name: 'Dominion',
+    title: 'Dominion Counter',
+    'og:title': 'Dominion Counter',
+    description: "Dominion's victory point calculator",
+    'og:description': "Dominion's victory point calculator",
+    theme_color: 'black',
+    background_color: 'black'
+  },
+  workbox: {
+    dev: true
+  },
   /*
   ** Axios module configuration
   */
