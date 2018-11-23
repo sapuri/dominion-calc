@@ -1,4 +1,4 @@
-# dominion
+# dominion-calc
 
 > Dominion's victory point calculator
 

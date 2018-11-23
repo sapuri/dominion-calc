@@ -9,7 +9,7 @@
       <v-spacer/>
       <v-btn
         icon
-        href="https://github.com/sapuri/dominion"
+        href="https://github.com/sapuri/dominion-calc"
         target="_blank"
         rel="noopener">
         <svg
