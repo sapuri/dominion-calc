@@ -54,12 +54,14 @@ module.exports = {
     name: 'ドミニオン計算機',
     lang: 'ja',
     short_name: 'ドミニオン計算機',
+    start_url: '/',
+    display: 'standalone',
+    theme_color: 'black',
+    background_color: 'black',
     title: 'ドミニオン計算機',
     'og:title': 'ドミニオン計算機',
     description: "Dominion's victory point calculator",
-    'og:description': "Dominion's victory point calculator",
-    theme_color: 'black',
-    background_color: 'black'
+    'og:description': "Dominion's victory point calculator"
   },
   /*
   ** Axios module configuration
