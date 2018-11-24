@@ -4,10 +4,13 @@ node_js:
 - node
 dist: trusty
 sudo: false
+before_install: yarn global add greenkeeper-lockfile@1
 install:
 - yarn
+before_script: greenkeeper-lockfile-update
 script:
 - yarn generate
+after_script: greenkeeper-lockfile-upload
 notifications:
   slack:
     secure: kqaAKL3g78fw9b3QgCwG2FlRLg1RfWDzben96DaAvf14mVIpejLzjBIi66nJxTifV6Xqm08GOEw73Ok8ieU3IuBWZITfJAJVF+ZQ0IEfpR1aiGxpD7wfLn1QEWmNffAX7XsWTpntDufjQpTESOEP0HGpLrC7QYTasODiZgHhoZt05+EgE3emsxaXk16K3z1XRIHQid2kxiw7uOdpptGkX3oK1WBUFF6aySoPVLuCEz+ThtO/FjP8nkfKDtiJ3v2EYGvh+Z74wdJCOFrKN4iCVtNsz8TJCxMUMqpYWP8ZP/xrr/5qdJfXBhLGQVhFIzELqp8Yjlv6fCJkUlXzeQi/QskZcUX+UWVoqYVqjAgsrl9H1OqhODY5LNKHjeOJLI2pYg1Hmm1DC2rAOnlK3fAmADEBsMiVVUlahirhmdAx8o103ovuFE8jfOr8KTsq8izSuzIEjZ5LUPRlrJuJ2GyqQ6wLcsqRhibaGZwaJrlF7vgDkrVqI0jEiB9AI/qu/I/ztXLV4o+M+j9TTiuCvbSZA0q2Hc5/zHss1Ur8ACBBHM2trTKyvk4ESGPuqpDVqsPrHqrHhltrV9fsgRa8hlIU/ZI/kmbYmv5S1zGE7Yjrv2/tx2uPvsTnn74/VsKu6Ov9Xe1ZKuB5EVUxusyEz5R7yUE8KijJ24RLrGYXpfKXBMs=
