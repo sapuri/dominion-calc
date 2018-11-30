@@ -27,7 +27,7 @@
     "eslint-plugin-prettier": "3.0.0",
     "eslint-plugin-vue": "^4.0.0",
     "nodemon": "^1.11.0",
-    "prettier": "1.15.2",
+    "prettier": "1.15.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
