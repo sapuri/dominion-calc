@@ -18,16 +18,16 @@
     "cross-env": "^6.0.0",
     "nuxt": "^2.0.0",
     "vuetify": "^1.2.4",
-    "vuex-persistedstate": "^2.5.4"
+    "vuex-persistedstate": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^6.0.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-loader": "^3.0.0",
-    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-vue": "^6.0.0",
-    "nodemon": "^1.11.0",
+    "nodemon": "^2.0.0",
     "prettier": "1.19.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
