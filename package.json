@@ -18,7 +18,7 @@
     "cross-env": "^6.0.0",
     "nuxt": "^2.0.0",
     "vuetify": "^1.2.4",
-    "vuex-persistedstate": "^2.5.4"
+    "vuex-persistedstate": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
